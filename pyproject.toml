@@ -1,0 +1,25 @@
+[project]
+name = "modele-financier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "benjamin.deporte", email = "benjamin.deporte@irt-saintexupery.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "highspy>=1.15.1",
+    "ipykernel>=6.31.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "pyomo>=6.9.5",
+]
+
+[project.scripts]
+modele-financier = "modele_financier:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
